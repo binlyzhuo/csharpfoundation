@@ -8,7 +8,13 @@ namespace CSharpFoundation
 {
     public class ConvertHelper
     {
+        public static void Execute()
+        {
+            IContravariant<object> iobj = new Sample<object>();
+            IContravariant<string> isstr = new Sample<string>();
 
+            isstr = iobj;
+        }
     }
 
     interface IContravariant<in A>
@@ -20,4 +26,7 @@ namespace CSharpFoundation
     {
          
     }
+
+    public class Sample<A>:IContravariant<A>
+    { }
 }
