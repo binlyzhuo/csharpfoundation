@@ -44,5 +44,30 @@ namespace CSharpFoundation
                 new Product(name:"sweeney",price:13)
             };
         }
+
+        public static void ExecuteCodes()
+        {
+            var products = GetSampleProducts();
+            products.Sort(new ProductNameComparer());
+            ProductNameComparer productNameComparer = new ProductNameComparer();
+            //Comparison<int> comparison = new Comparison<int>(productNameComparer.Compare);
+            //Comparison<int> comparer = new ProductNameComparer().Compare();
+            products.Sort(delegate(Product x, Product y)
+            {
+                return x.Name.CompareTo(y.Name);
+            });
+            foreach (var product in products)
+            {
+                Console.WriteLine(product);
+            }
+        }
+    }
+
+    public class ProductNameComparer : IComparer<Product>
+    {
+        public int Compare(Product x, Product y)
+        {
+            return x.Name.CompareTo(y.Name);
+        }
     }
 }

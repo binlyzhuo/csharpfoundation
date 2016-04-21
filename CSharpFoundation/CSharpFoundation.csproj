@@ -42,12 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParamNaming.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StreamHelper.cs" />
     <Compile Include="StringHelper.cs" />
     <Compile Include="ThreadHelper.cs" />
+    <Compile Include="WordCom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
