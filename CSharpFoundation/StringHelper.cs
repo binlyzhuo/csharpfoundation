@@ -8,5 +8,8 @@ namespace CSharpFoundation
 {
     class StringHelper
     {
+		static void GetLen()
+		{
+		}
     }
 }
