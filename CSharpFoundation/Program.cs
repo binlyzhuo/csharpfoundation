@@ -12,7 +12,9 @@ namespace CSharpFoundation
         {
             int num = 0;
             //char bit = 1;
-            GC.Collect();
+            //GC.Collect();
+            Console.WriteLine("Just do it!!");
+            
 
         }
     }
