@@ -10,6 +10,10 @@ namespace CSharpFoundation
     {
         static void Main(string[] args)
         {
+            int num = 0;
+            //char bit = 1;
+            GC.Collect();
+
         }
     }
 }
