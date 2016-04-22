@@ -10,8 +10,15 @@ namespace CSharpFoundation
     {
         static void Main(string[] args)
         {
-            Product.ExecuteCodes();
-            ParamNaming.ExecuteCode();
+            //Product.ExecuteCodes();
+            //ParamNaming.ExecuteCode();
+
+            //ThreadHelper.ExecuteCodes();
+            //TaskHelper.ExecuteCodes();
+            //TaskHelper.TestCodes();
+            //TaskHelper.TestTaskArgs();
+            //TaskHelper.RunAsyncCode();
+            TaskHelper.CountPage();
             Console.ReadKey();
 
         }

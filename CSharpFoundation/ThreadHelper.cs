@@ -21,5 +21,31 @@ namespace CSharpFoundation
         {
             Console.WriteLine("I am working");
         }
+
+        public static void ExecuteCodes()
+        {
+            Console.WriteLine("main thread start!");
+            Thread t1 = new Thread(DoRun1);
+            t1.Start();
+
+            Thread t2 = new Thread(DoRun2)
+            {
+                IsBackground = true
+            };
+
+            Console.WriteLine("main thread complete!");
+        }
+
+        static void DoRun1()
+        {
+            Thread.Sleep(500);
+            Console.WriteLine("UI Thread!");
+        }
+
+        static void DoRun2()
+        {
+            Thread.Sleep(1500);
+            Console.WriteLine("Background Thread!");
+        }
     }
 }
