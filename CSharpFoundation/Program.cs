@@ -19,7 +19,8 @@ namespace CSharpFoundation
             //TaskHelper.TestTaskArgs();
             //TaskHelper.RunAsyncCode();
             //TaskHelper.CountPage();
-            ThreadPoolHelper.ExecuteCode();
+            //ThreadPoolHelper.ExecuteCode();
+            LambdaHelper.FindList();
             Console.ReadKey();
 
         }
