@@ -20,7 +20,7 @@ namespace CSharpFoundation
             //TaskHelper.RunAsyncCode();
             //TaskHelper.CountPage();
             //ThreadPoolHelper.ExecuteCode();
-            LambdaHelper.FindList();
+            //LambdaHelper.FindList();
             Console.ReadKey();
 
         }

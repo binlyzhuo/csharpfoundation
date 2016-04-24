@@ -27,6 +27,8 @@ namespace CSharpFoundation
          
     }
 
-    public class Sample<A>:IContravariant<A>
-    { }
+    public class Sample<A> : IContravariant<A>
+    {
+        
+    }
 }
