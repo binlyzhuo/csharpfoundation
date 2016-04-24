@@ -21,6 +21,7 @@ namespace CSharpFoundation
             //TaskHelper.CountPage();
             //ThreadPoolHelper.ExecuteCode();
             //LambdaHelper.FindList();
+            DLRHelper.ExecuteCode();
             Console.ReadKey();
 
         }
