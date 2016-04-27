@@ -46,6 +46,7 @@
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="DLRHelper.cs" />
     <Compile Include="LambdaHelper.cs" />
+    <Compile Include="ListExtends.cs" />
     <Compile Include="ParamNaming.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
